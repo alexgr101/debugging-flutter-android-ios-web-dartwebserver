@@ -3,16 +3,36 @@ branch-defaults:
     environment: dartserver-staging-v1
     group_suffix: null
 global:
-  application_name: debugging-dart-webserver
+  application_name: AWS_EB_DEMO
   branch: null
-  default_ec2_keyname: brandons-aws-access
-  default_platform: Multi-container Docker 19.03.6-ce (Generic)
+  default_ec2_keyname: null
+  default_platform: Multi-container Docker running on 64bit Amazon Linux
   default_region: us-west-2
   include_git_submodules: true
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: eb-cli
+  profile: ebeanstalk-demo
   repository: null
   sc: git
   workspace_type: Application
+
+
+# branch-defaults:
+#   master:
+#     environment: dartserver-staging-v1
+#     group_suffix: null
+# global:
+#   application_name: debugging-dart-webserver
+#   branch: null
+#   default_ec2_keyname: brandons-aws-access
+#   default_platform: Multi-container Docker 19.03.6-ce (Generic)
+#   default_region: us-west-2
+#   include_git_submodules: true
+#   instance_profile: null
+#   platform_name: null
+#   platform_version: null
+#   profile: eb-cli
+#   repository: null
+#   sc: git
+#   workspace_type: Application
